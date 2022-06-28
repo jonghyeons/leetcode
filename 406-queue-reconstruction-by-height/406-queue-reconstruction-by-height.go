@@ -1,5 +1,5 @@
 func reconstructQueue(people [][]int) [][]int {
-    var res [][]int
+	var res [][]int
 	sort.Sort(person(people))
 
 	insert := func(idx int, person []int) {
