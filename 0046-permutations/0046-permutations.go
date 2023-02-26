@@ -1,8 +1,8 @@
 var res [][]int
 
 func permute(nums []int) [][]int {
-    res = [][]int{}
-    dfs([]int{}, nums)
+	res = [][]int{}
+	dfs([]int{}, nums)
 	return res
 }
 
@@ -11,7 +11,7 @@ func dfs(prev, nums []int) {
 		res = append(res, prev)
 		return
 	}
-    
+
 	for i, v := range nums {
 		element := make([]int, len(nums))
 		copy(element, nums)
